@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <!-- <div class="popup__container">
+    <div class="popup__back hidden"></div>
+    <div class="popup__itself hidden">
+      <h3 class="heading-3">Please, insert the bill</h3>
+      <input class="popup__input" type="text">
+      <button class="popup__btn">enter</button>
+      <div class="popup__close-container">
+        <div class="popup__close popup__close-1"></div>
+        <div class="popup__close popup__close-2"></div>
+      </div>
+    </div>
+  </div> -->
+
+    <main class="container-init">
+      <div class="text-1">
+        <h1 class="heading-1">spli <span>tter</span></h1>
+      </div>
+      <div class="container">
+        <section class="calculation">
+          <h3 class="heading-3">Bill</h3>
+          <div class="input-div">
+            <input
+              type="text"
+              class="calculation__bill-input calc__bill-input"
+            />
+            <img
+              class="input-img"
+              src="images/icon-dollar.svg"
+              alt="input img"
+            />
+          </div>
+          <h4 class="heading-4">Select tip %</h4>
+          <div class="calculation__wrap">
+            <button
+              class="calculation__btn-wrap calculation__btn-wrap--btn tipAmount"
+            >
+              5%
+            </button>
+            <button
+              class="calculation__btn-wrap calculation__btn-wrap--btn tipAmount"
+            >
+              10%
+            </button>
+            <button
+              class="calculation__btn-wrap calculation__btn-wrap--btn tipAmount"
+            >
+              15%
+            </button>
+            <button
+              class="calculation__btn-wrap calculation__btn-wrap--btn tipAmount"
+            >
+              20%
+            </button>
+            <button
+              class="calculation__btn-wrap calculation__btn-wrap--btn tipAmount"
+            >
+              50%
+            </button>
+            <input
+              class="calculation__btn-input custom"
+              type="text"
+              placeholder="Custom"
+            />
+          </div>
+          <div style="display: flex; justify-content: space-between">
+            <h4 class="heading-4">Number of people</h4>
+            <h4 class="heading-4 warn hidden">Can't be zero</h4>
+          </div>
+          <div class="input-div">
+            <input
+              type="text"
+              class="calculation__bill-input calc-number-people whenwarn"
+            />
+            <img
+              class="input-img"
+              src="images/icon-person.svg"
+              alt="Input icon"
+            />
+          </div>
+        </section>
+        <section class="screen">
+          <div class="screen__tip-amount">
+            <p>Tip Amount <span>/ person</span></p>
+            <div class="screen__collect">
+              <img class="screen__img" src="images/icon-dollar.svg" alt="" />
+              <div class="screen__tip-amount--total tip-per-person">0</div>
+            </div>
+          </div>
+          <div class="screen__tip-amount">
+            <p>Total <span>/ person</span></p>
+            <div class="screen__collect">
+              <img class="screen__img" src="images/icon-dollar.svg" alt="" />
+              <div class="screen__tip-amount--total total-per-person">0</div>
+            </div>
+          </div>
+          <button class="btn-main btn-reset hidden">Reset</button>
+          <button class="btn-main btn-calc">calculate</button>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
